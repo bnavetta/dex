@@ -1,5 +1,5 @@
 hash: e83f57fea75d4a509d812fab12785599fdab16db950cc3738cec59a6c73f93af
-updated: 2017-07-25T13:48:39.899190846-07:00
+updated: 2017-10-07T22:29:07.375244157-04:00
 imports:
 - name: github.com/beevik/etree
   version: 4cd0dd976db869f817248477718071a28e978df0
@@ -78,6 +78,7 @@ imports:
   subpackages:
   - github
   - internal
+  - slack
 - name: golang.org/x/sys
   version: 833a04a10549a95dc34458c195cbad61bbb6cb4d
   subpackages:
