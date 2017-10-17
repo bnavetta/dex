@@ -25,6 +25,7 @@ import (
 	"github.com/coreos/dex/connector/mock"
 	"github.com/coreos/dex/connector/oidc"
 	"github.com/coreos/dex/connector/saml"
+	"github.com/coreos/dex/connector/slack"
 	"github.com/coreos/dex/storage"
 )
 
@@ -393,6 +394,7 @@ var ConnectorsConfig = map[string]func() ConnectorConfig{
 	"github":       func() ConnectorConfig { return new(github.Config) },
 	"gitlab":       func() ConnectorConfig { return new(gitlab.Config) },
 	"oidc":         func() ConnectorConfig { return new(oidc.Config) },
+	"slack":        func() ConnectorConfig { return new(slack.Config) },
 	"saml":         func() ConnectorConfig { return new(saml.Config) },
 	// Keep around for backwards compatibility.
 	"samlExperimental": func() ConnectorConfig { return new(saml.Config) },
